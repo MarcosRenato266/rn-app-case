@@ -1,0 +1,4 @@
+{
+  "extends": "universe/native",
+  "parser": "babel-eslint"
+}

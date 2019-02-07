@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "616841521061",
+    "firebase_url": "https://fiduc-66902.firebaseio.com",
+    "project_id": "fiduc-66902",
+    "storage_bucket": "fiduc-66902.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616841521061:android:b2ec2e785e1f15a7",
+        "android_client_info": {
+          "package_name": "com.fiducapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616841521061-k6578moait2omq4c3s5rdvl70ldg9qb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fiducapp",
+            "certificate_hash": "550bae7a317f388da5bac3e7d201e85b8817dd40"
+          }
+        },
+        {
+          "client_id": "616841521061-jg8riqlvba3rjja4g06m74a51rlhvupg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJpmNwNC8734cSYxJwYQ5Im7tRVpcBlQg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616841521061-jg8riqlvba3rjja4g06m74a51rlhvupg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

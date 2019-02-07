@@ -1,0 +1,52 @@
+buildscript {
+    //OLD VERSION 
+    ext {
+        buildToolsVersion = "27.0.3"
+        minSdkVersion = 16
+        compileSdkVersion = 27
+        targetSdkVersion = 26
+        supportLibVersion = "27.1.1"
+    }
+    repositories {
+        google()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'com.google.gms:google-services:4.0.1'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        maven {
+            url "$rootDir/../node_modules/react-native/android"
+        }
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com" }
+        google()
+        jcenter()
+    }
+}
+
+subprojects {
+  project.configurations.all {
+     resolutionStrategy.eachDependency { details ->
+        if (details.requested.group == 'com.android.support'
+              && !details.requested.name.contains('multidex') ) {
+           details.useVersion "27.1.1"
+        }
+     }
+  }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.4'
+    distributionUrl = distributionUrl.replace("bin", "all")
+}
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
